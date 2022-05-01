@@ -1,0 +1,43 @@
+body{
+    background-size: 100%;
+}
+*{
+    padding: 0px;/*margen*/
+    margin: 0px;/*Para el menu*/
+}
+#header{
+    margin: auto;/*Tamaño del menu*/
+    width: 800px;
+    font-family: verdana;
+}
+ul{
+    list-style: none;/*Desaparece las viñetas*/
+}
+.nav li a{
+    background-color: aqua;
+    color:purple;                    /*Color de la lista*/
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.nav li a:hover{
+    background-color: rgb(255, 0, 0) ;/*Color al pase de menu*/
+}
+.nav>li{
+    float:left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover>ul{
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+}
+.nav li ul li{
+    right: -140px;
+    top: 0px;
+}
